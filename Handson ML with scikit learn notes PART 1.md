@@ -1,7 +1,7 @@
 Handson ML with scikit learn notes PART 1 
 
 
-Gradient Descent
+## Gradient Descent
 
 
 
@@ -21,25 +21,18 @@ Mini batch GD computes the gradients on small random sets of instances called mi
 
 
 
-Polynomial regression
+## Polynomial regression
 
 
 
 We can actually use a linear model to fit nonlinear data. A simple way to do this is to add powers of each feature as new features, then train a linear model on this extended set of features. This technique is called Polynomial Regression.
 
 
-
 Learning curves
-
-
 
 Learning curves: these are plots of the model's performance on the training set and the validation set as a function of the training set size (or the training iteration).
 
-
-
-The Bias/Variance Tradeoff
-
-
+## The Bias/Variance Tradeoff
 
 Bias : This part of the generalization error is due to wrong assumptions, such as assuming that the data is linear when it is actually quadratic. A high-bias model is most likely to underfit the training data.
 
@@ -53,7 +46,7 @@ Conversely, reducing a model's complexity increases its bias and reduces its var
 
 
 
-Ridge regression
+## Ridge regression
 
 
 
@@ -65,15 +58,14 @@ weights as small as possible
 
 
 
-Lasso(Least Absolute Shrinkage and Selection Operator) Regression (L1 norm)
-
+## Lasso(Least Absolute Shrinkage and Selection Operator) Regression (L1 norm)
 
 
 An important characteristic of Lasso Regression is that it tends to completely eliminate the weights of the least important features (i.e., set them to zero).
 
 
 
-Elastic Net
+## Elastic Net
 
 
 
@@ -84,8 +76,6 @@ regularization term is a simple mix of both Ridge and Lasso's regularization ter
 and you can control the mix ratio r. When r = 0, Elastic Net is equivalent to Ridge
 
 Regression, and when r = 1, it is equivalent to Lasso Regression.
-
-
 
 
 
@@ -104,9 +94,6 @@ training instances or when several features are strongly correlated.
 
 
 
-
-
-
 It is preferred to have at least a little bit of regularization, so generally we should avoid plain regression.
 
 Ridge regression is good default.
@@ -117,7 +104,7 @@ Elastic Net is preferred over lasso because lasso may behave erratically when no
 
 
 
-Logistic Regression
+## Logistic Regression
 
 
 
@@ -129,7 +116,7 @@ logistic of this result.
 
 
 
-Softmax Regression
+## Softmax Regression
 
 
 
@@ -145,11 +132,11 @@ the class with the highest estimated probability
 
 
 
-Chapter 5
+#  Chapter 5
 
 
 
-Support vector machine
+## Support vector machine
 
 
 
@@ -299,7 +286,7 @@ w, b,ζ
 
 
 
-Quadratic programming problems
+## Quadratic programming problems
 
 Convex quadratic optimization problems with linear constraints. Such problems are known as Quadratic Programming (QP) problems.
 
@@ -337,7 +324,7 @@ b is an nc-dimensional vector
 
 
 
-Kernel
+## Kernel
 
 
 
@@ -369,11 +356,11 @@ The function max(0, 1 – t) is called the hinge loss function
 
 
 
-Chapter 6
+# Chapter 6
 
 
 
-Decision Tree
+## Decision Tree
 
 
 
@@ -451,7 +438,7 @@ They are sensitive to small variations in data ( high variance)
 
 
 
-Ensemble Learning and Random forests
+## Ensemble Learning and Random forests
 
 
 
@@ -475,7 +462,7 @@ To select voting preference we can just put voting = "soft" or voting = "hard". 
 
 
 
-Bagging and Pasting
+## Bagging and Pasting
 
 
 
@@ -499,7 +486,7 @@ In Scikit-Learn we can do this by setting oob\_score = True
 
 
 
-Random Patches and subspaces
+## Random Patches and subspaces
 
 
 
@@ -515,7 +502,7 @@ Keeping all the training instances but sampling features is called Random subspa
 
 
 
-Random forest
+## Random forest
 
 
 
@@ -537,7 +524,7 @@ Random Forest are very useful in feature selection
 
 
 
-Boosting
+## Boosting
 
 
 
@@ -563,7 +550,7 @@ Weights are updated, and so on
 
 
 
-AdaBoost Algorithm
+## AdaBoost Algorithm
 
 Each instance weight w(i) is initially set to 1/m.
 
@@ -591,7 +578,7 @@ When there are just 2 classes SAMME acts as AdaBoost.
 
 
 
-Gradient Boosting
+## Gradient Boosting
 
 Just like AdaBoost, Gradient Boosting works by sequentially adding predictors to an ensemble, each one correcting its predecessor.
 
@@ -621,7 +608,7 @@ But the only difference is, instead of tweaking the instance weights at every it
 
 
 
-Chapter 9
+## Chapter 9
 
 
 
@@ -827,6 +814,7 @@ m = no.of instances, p = no.of parameters, L hat = maximized value of likelihood
 
 * Rather than manually searching for optimal no.of clusters, it is possible to use the "BayesianGaussianMixture" class which can give weights equal to zero ( or close) to unnecessary clusters.
 * We just need to set the value of "n\_components" to a value which we believe would be greater than optimal no.of clusters.
+
 
 
 
