@@ -1,11 +1,6 @@
 Handson ML with scikit learn notes PART 1 
 
 
-
-
-
-
-
 Gradient Descent
 
 
@@ -832,6 +827,7 @@ m = no.of instances, p = no.of parameters, L hat = maximized value of likelihood
 
 * Rather than manually searching for optimal no.of clusters, it is possible to use the "BayesianGaussianMixture" class which can give weights equal to zero ( or close) to unnecessary clusters.
 * We just need to set the value of "n\_components" to a value which we believe would be greater than optimal no.of clusters.
+
 
 
 
