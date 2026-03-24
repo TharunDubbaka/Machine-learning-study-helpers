@@ -742,7 +742,6 @@ Active learning
 
 
 
-
 DBSCAN
 
 
@@ -760,7 +759,6 @@ Working :
 
 * This algorithm works well if the clusters are dense enough and they are well separated by low-density regions.
 * Though DBSCAN can't predict which cluster a new instance belongs to.
-
 
 
 
