@@ -1,4 +1,4 @@
-Handson ML with scikit learn notes PART 1 
+Handson ML with scikit learn notes
 
 
 
